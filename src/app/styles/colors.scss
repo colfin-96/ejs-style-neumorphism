@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --black: #000;
+
+  --primary-color: #0082bb;
+  --primary-color-hover: mix(var(--primary-color), var(--white), 4%);
+}
+
+[data-theme="dark"] {
+  --primary-color: hsl(198, 100%, 32%);
+
+  background-color: #222;
+}
+
+[data-theme="neumorphic"] {
+  --primary-color: #eee;
+  background-color: #eee;
+}

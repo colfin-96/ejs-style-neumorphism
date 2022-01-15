@@ -2,17 +2,24 @@
   --white: #fff;
   --black: #000;
 
-  --primary-color: #0082bb;
-  --primary-color-hover: mix(var(--primary-color), var(--white), 4%);
+  --color-primary-h: 198deg;
+  --color-primary-s: 100%;
+  --color-primary-l: 37%;
+  --color-primary: hsl(
+    var(--color-primary-h) var(--color-primary-s) var(--color-primary-l)
+  );
+  --color-primary-hover: hsl(var(--color-primary-h) var(--color-primary-s) 45%);
+  --color-primary-text: var(--white);
 }
 
 [data-theme="dark"] {
-  --primary-color: hsl(198, 100%, 32%);
+  --color-primary: hsl(198, 100%, 24%);
+  --color-primary-hover: mix(var(--color-primary), var(--white), 4%);
 
   background-color: #222;
 }
 
 [data-theme="neumorphic"] {
-  --primary-color: #eee;
+  --color-primary: #eee;
   background-color: #eee;
 }

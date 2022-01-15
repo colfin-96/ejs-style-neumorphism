@@ -1,2 +1,31 @@
-@import "../../../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+// @import "../../../../node_modules/@syncfusion/ej2-base/styles/material.css";
+// @import "../../../../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+
+[ejs-button] {
+  background-color: var(--color-primary);
+  height: 36px;
+  box-shadow: var(--button-shadow);
+
+  border-radius: 4px;
+
+  font-size: var(--font-size);
+  color: var(--color-primary-text);
+  letter-spacing: 0px;
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+
+  padding: 10px 16px;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+    color: var(--color-primary-text);
+  }
+
+  :is(&[cssClass="e-flat"], &[cssClass="e-outline"]) {
+    background-color: var(--color-primary-text);
+    box-shadow: none;
+
+    color: var(--color-primary);
+  }
+}

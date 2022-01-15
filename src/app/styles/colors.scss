@@ -8,7 +8,11 @@
   --color-primary: hsl(
     var(--color-primary-h) var(--color-primary-s) var(--color-primary-l)
   );
-  --color-primary-hover: hsl(var(--color-primary-h) var(--color-primary-s) 45%);
+
+  //hsl(198, 81%, 42%)
+  --color-primary-hover: hsl(var(--color-primary-h) 81% 42%);
+  //hsl(197, 54%, 97%)
+  --color-primary-hover-inverted: hsl(var(--color-primary-h) 54% 97%);
   --color-primary-text: var(--white);
 }
 

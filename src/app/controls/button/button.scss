@@ -2,6 +2,7 @@
   background-color: var(--color-primary);
   height: 36px;
   box-shadow: var(--button-shadow);
+  border-radius: 4px;
 
   font-size: var(--font-size);
   color: var(--color-primary-text);
@@ -22,11 +23,18 @@
     box-shadow: none;
 
     color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary-hover-inverted);
+    }
   }
 
   &[cssClass="e-flat"] {
+    padding: 10px 8px;
   }
 
   &[cssClass="e-outline"] {
+    border-color: #e0e0e0;
+    border-width: 1px;
   }
 }
